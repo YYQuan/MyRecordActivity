@@ -10,7 +10,7 @@ https://github.com/qssq/recordutil
 
 通过RecordingManagerI 这个抽象类来完成录音操作。
 RecordingManagerI 的一下方法来完成整个录音
-{
+
     //开始
     public  void startRecord()    
     //继续
@@ -19,7 +19,7 @@ RecordingManagerI 的一下方法来完成整个录音
     public void pauseRecord()
     //结束
     public void overRecord()
-}
+
 
 录音当中的各个过程的回调 通过OnRecordingCallback接口来回调
 OnRecordingCallback
