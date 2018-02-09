@@ -31,7 +31,8 @@ import jeff.yeyongquan.pers.myrecordactivity.Recording.utils.MediaDirectoryUtils
 public class MP3Record extends RecordingManagerI {
 
     //=======================AudioRecord Default Settings=======================
-    private static final int DEFAULT_AUDIO_SOURCE = MediaRecorder.AudioSource.MIC;
+    //private static final int DEFAULT_AUDIO_SOURCE = MediaRecorder.AudioSource.MIC;
+    private static final int DEFAULT_AUDIO_SOURCE = MediaRecorder.AudioSource.VOICE_COMMUNICATION;
     /**
      * 以下三项为默认配置参数。Google Android文档明确表明只有以下3个参数是可以在所有设备上保证支持的。
      */
@@ -52,7 +53,8 @@ public class MP3Record extends RecordingManagerI {
     /**
      * Encoded bit rate. MP3 file will be encoded with bit rate 32kbps
      */
-    private static final int DEFAULT_LAME_MP3_BIT_RATE = 32;
+    //private static final int DEFAULT_LAME_MP3_BIT_RATE = 32;
+    private static final int DEFAULT_LAME_MP3_BIT_RATE = 32 * 6 ;  // 192 kbps
 
     /**
      * 自定义 每160帧作为一个周期，通知一下需要进行编码

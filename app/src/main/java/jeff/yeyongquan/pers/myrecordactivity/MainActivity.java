@@ -826,9 +826,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        if(recordingManager instanceof WavRecord) {
+        if(file.getAbsolutePath().endsWith("wav")) {
             tvFormat.setText(R.string.wav_format);
-        }else if(recordingManager instanceof MP3Record){
+        }else if(file.getAbsolutePath().endsWith("mp3")){
             tvFormat.setText(R.string.mp3_format);
         }else{
             tvFormat.setText(R.string.amr_format);
