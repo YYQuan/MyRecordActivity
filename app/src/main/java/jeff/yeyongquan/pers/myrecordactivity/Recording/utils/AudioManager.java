@@ -1,10 +1,8 @@
-package cn.qssq666.audio;
+package jeff.yeyongquan.pers.myrecordactivity.Recording.utils;
 
 import android.util.Log;
 
 
-
-//要配合so 库使用并且要注意 包名不能改变
 public class AudioManager {
     public static final String TAG = "AudioManager";
 
