@@ -1,4 +1,4 @@
- MyRecordActivity
+MyRecordActivity
 一个录音demo
 
 能够实现wav  MP3 amr 三种格式的录音 ，暂停录音，继续录音，以及播放。
@@ -23,7 +23,7 @@ RecordingManagerI 的一下方法来完成整个录音
 
 录音当中的各个过程的回调 通过OnRecordingCallback接口来回调
 OnRecordingCallback
-{
+
             //一次完成录音的结束
             @Override
             public void onOver(File file) {
@@ -48,7 +48,7 @@ OnRecordingCallback
             @Override
            public void onVolumeChange(int volumeGrade) {           
             }
-}
+
 
 实际用法：
  RecordingManagerI recordingManager = RecordFactory.getRecordManagerInstance(WavRecord.class);
@@ -61,7 +61,7 @@ OnRecordingCallback
  使用MediaPlayer 来完成音频的播放
  
  MediaPlayer
- {
+
      /**
      * 开始播
      *
@@ -77,7 +77,7 @@ OnRecordingCallback
      */
     public void stopPlay()
   
- }
+ 
  
  另外，需要传入一些callback 以便对播放过程进行监控
    /**
