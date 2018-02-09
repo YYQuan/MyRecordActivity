@@ -12,7 +12,7 @@ https://github.com/qssq/recordutil
 RecordingManagerI 的一下方法来完成整个录音
 {
     //开始
-    public  void startRecord()
+    public  void startRecord()    
     //继续
     public  void continueRecord()
     //暂停
